@@ -6,4 +6,18 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="View\Dengi.png" />
+    <None Remove="View\Informatsia.png" />
+    <None Remove="View\Klyuch.png" />
+    <None Remove="View\Shlem.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Dengi.png" />
+    <Resource Include="Resources\Informatsia.png" />
+    <Resource Include="Resources\Klyuch.png" />
+    <Resource Include="Resources\Shlem.png" />
+  </ItemGroup>
+
 </Project>
