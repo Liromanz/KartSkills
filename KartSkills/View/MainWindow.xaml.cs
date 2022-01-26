@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Threading;
+using KartSkills.Global;
 
 namespace KartSkills.View
 {
@@ -9,13 +10,13 @@ namespace KartSkills.View
     /// </summary>
     public partial class MainWindow : Window
     {
-        private DispatcherTimer timer;
-        private DateTime startDate = new DateTime(2023, 6, 19, 23, 59, 59);
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        private DispatcherTimer timer;
+        private DateTime startDate = new DateTime(2023, 6, 19, 23, 59, 59);
         private void StartWindow_Loaded(object sender, RoutedEventArgs e)
         {
             timer = new DispatcherTimer();
@@ -28,6 +29,12 @@ namespace KartSkills.View
                     $"{Math.Abs(startDate.Second- DateTime.Now.Second)} секунд.";
             };
             timer.Start();
+        }
+
+        private void SponsorRegisterClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            WindowHelper.OpenNewWindow(new SponsorWindow());
+            Close();
         }
     }
 }

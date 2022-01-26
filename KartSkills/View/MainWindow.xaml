@@ -28,7 +28,7 @@
             <TextBlock Text="Регистрация гонщика" FontSize="15" Margin="78,276,0,0"/>
 
             <Border BorderBrush="#FF505050" BorderThickness="3" Margin="254,135,419,163">
-                <Image Source="/Resources/Dengi.png"/>
+                <Image Source="/Resources/Dengi.png" MouseDown="SponsorRegisterClick"/>
             </Border>
             <TextBlock Text="Регистрация спонсора" FontSize="15" Margin="239,276,0,0"/>
 
