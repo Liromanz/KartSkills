@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Threading;
 using KartSkills.Global;
 
@@ -31,9 +32,15 @@ namespace KartSkills.View
             timer.Start();
         }
 
-        private void SponsorRegisterClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void SponsorRegister_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             WindowHelper.OpenNewWindow(new SponsorWindow());
+            Close();
+        }
+
+        private void Information_Click(object sender, MouseButtonEventArgs e)
+        {
+            WindowHelper.OpenNewWindow(new InfoWindow());
             Close();
         }
     }

@@ -28,12 +28,12 @@
             <TextBlock Text="Регистрация гонщика" FontSize="15" Margin="78,276,0,0" FontFamily="Arial"/>
 
             <Border BorderBrush="#FF505050" BorderThickness="3" Margin="254,135,419,163">
-                <Image Source="/Resources/Dengi.png" MouseDown="SponsorRegisterClick"/>
+                <Image Source="/Resources/Dengi.png" MouseDown="SponsorRegister_Click"/>
             </Border>
             <TextBlock Text="Регистрация спонсора" FontSize="15" Margin="239,276,0,0" FontFamily="Arial"/>
 
             <Border BorderBrush="#FF505050" BorderThickness="3" Margin="422,135,251,163">
-                <Image Source="/Resources/Informatsia.png"/>
+                <Image Source="/Resources/Informatsia.png" MouseDown="Information_Click"/>
             </Border>
             <TextBlock Text="О событии" FontSize="15" Margin="448,276,0,0" FontFamily="Arial"/>
 

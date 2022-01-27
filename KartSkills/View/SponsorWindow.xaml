@@ -19,7 +19,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button Grid.RowSpan="2" Content="Назад" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" MinWidth="100" Margin="40,0,0,0" Click="BackButton_Click"/>
+            <Button  Grid.RowSpan="2" Content="Назад" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" MinWidth="100" Margin="40,0,0,0" Click="BackButton_Click"/>
             <TextBlock Text="Kart Skills 2017" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"/>
             <TextBlock Grid.Row="1" Text="Москва, Россия 20 июня 2017" HorizontalAlignment="Center" FontSize="18"/>
         </Grid>
