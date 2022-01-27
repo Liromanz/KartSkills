@@ -6,14 +6,15 @@ using KartSkills.Global;
 namespace KartSkills.View
 {
     /// <summary>
-    /// Логика взаимодействия для SponsorWindow.xaml
+    /// Логика взаимодействия для SponsorThanksWindow.xaml
     /// </summary>
-    public partial class SponsorWindow : Window
+    public partial class SponsorThanksWindow : Window
     {
-        public SponsorWindow()
+        public SponsorThanksWindow()
         {
             InitializeComponent();
         }
+
         private DispatcherTimer timer;
         private DateTime startDate = new DateTime(2023, 6, 19, 23, 59, 59);
         private void StartWindow_Loaded(object sender, RoutedEventArgs e)
@@ -29,17 +30,11 @@ namespace KartSkills.View
             };
             timer.Start();
         }
-
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             WindowHelper.OpenNewWindow(new MainWindow());
             Close();
         }
 
-        private void PayButton_Click(object sender, RoutedEventArgs e)
-        {
-            WindowHelper.OpenNewWindow(new SponsorThanksWindow());
-            Close();
-        }
     }
 }

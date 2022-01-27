@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KartSkills.View"
         mc:Ignorable="d"
+        FontFamily="Arial"
         Title="Kart Skills 2017" Height="560" Width="800"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="StartWindow_Loaded">
     <Grid>
@@ -18,7 +19,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button Grid.RowSpan="2" Content="Назад" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" MinWidth="100" Margin="40,0,0,0" Click="Button_Click"/>
+            <Button Grid.RowSpan="2" Content="Назад" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" MinWidth="100" Margin="40,0,0,0" Click="BackButton_Click"/>
             <TextBlock Text="Kart Skills 2017" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"/>
             <TextBlock Grid.Row="1" Text="Москва, Россия 20 июня 2017" HorizontalAlignment="Center" FontSize="18"/>
         </Grid>
@@ -62,12 +63,12 @@
             <TextBlock Text="$" HorizontalAlignment="Left" TextAlignment="Center" FontSize="70" Margin="563,222,0,18" />
             <TextBlock Text="50" HorizontalAlignment="Left" TextAlignment="Center" FontSize="70" Margin="597,222,0,18" x:Name="TextAmount"/>
 
-            <Button Content="+" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="30" Margin="0,0,75,87"/>
-            <TextBox x:Name="BoxAmount" ToolTip="Количество денег, которое вы готовы пожертвовать" BorderBrush="Black" Margin="0,0,119,87" Width="80" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="26"/>
-            <Button Content="-" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="30" Margin="0,0,217,85"/>
+            <Button Content="+" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="30" Margin="0,0,75,76"/>
+            <TextBox x:Name="BoxAmount" ToolTip="Количество денег, которое вы готовы пожертвовать" BorderBrush="Black" Margin="0,0,119,76" Width="80" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="26"/>
+            <Button Content="-" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="30" Margin="0,0,217,74"/>
 
             <Button Content="Отмена" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,373,40,0"/>
-            <Button Content="Заплатить" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,373,182,0"/>
+            <Button Content="Заплатить" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,373,182,0" Click="PayButton_Click"/>
         </Grid>
         <Grid Grid.Row="2" Background="#FFB4B4B4">
             <TextBlock x:Name="TextTimer" Text="До начала события осталось:" HorizontalAlignment="Center" FontSize="18"/>

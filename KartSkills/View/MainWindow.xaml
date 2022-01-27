@@ -18,33 +18,33 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Kart Skills 2017" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"/>
-            <TextBlock Grid.Row="1" Text="Москва, Россия 20 июня 2017" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBlock Text="Kart Skills 2017" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" FontFamily="Arial"/>
+            <TextBlock Grid.Row="1" Text="Москва, Россия 20 июня 2017" HorizontalAlignment="Center" FontSize="18" FontFamily="Arial"/>
         </Grid>
         <Grid Grid.Row="1">
             <Border BorderBrush="#FF505050" BorderThickness="3" Margin="92,135,581,163">
                 <Image Source="/Resources/Shlem.png"/>
             </Border>
-            <TextBlock Text="Регистрация гонщика" FontSize="15" Margin="78,276,0,0"/>
+            <TextBlock Text="Регистрация гонщика" FontSize="15" Margin="78,276,0,0" FontFamily="Arial"/>
 
             <Border BorderBrush="#FF505050" BorderThickness="3" Margin="254,135,419,163">
                 <Image Source="/Resources/Dengi.png" MouseDown="SponsorRegisterClick"/>
             </Border>
-            <TextBlock Text="Регистрация спонсора" FontSize="15" Margin="239,276,0,0"/>
+            <TextBlock Text="Регистрация спонсора" FontSize="15" Margin="239,276,0,0" FontFamily="Arial"/>
 
             <Border BorderBrush="#FF505050" BorderThickness="3" Margin="422,135,251,163">
                 <Image Source="/Resources/Informatsia.png"/>
             </Border>
-            <TextBlock Text="О событии" FontSize="15" Margin="448,276,0,0"/>
+            <TextBlock Text="О событии" FontSize="15" Margin="448,276,0,0" FontFamily="Arial"/>
 
             <Border BorderBrush="#FF505050" BorderThickness="3" Margin="591,135,82,163">
                 <Image Source="/Resources/Klyuch.png"/>
             </Border>
-            <TextBlock Text="Вход в систему" FontSize="15" Margin="601,276,0,0"/>
+            <TextBlock Text="Вход в систему" FontSize="15" Margin="601,276,0,0" FontFamily="Arial"/>
 
         </Grid>
         <Grid Grid.Row="2" Background="#FFB4B4B4">
-            <TextBlock x:Name="TextTimer" Text="До начала события осталось:" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBlock x:Name="TextTimer" Text="До начала события осталось:" HorizontalAlignment="Center" FontSize="18" FontFamily="Arial"/>
         </Grid>
     </Grid>
 </Window>
