@@ -26,7 +26,7 @@
             <TextBlock Text="Меню гонщика" HorizontalAlignment="Center" FontSize="18" Margin="0,10,0,0"/>
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Регистрация на гонку" Width="300" Height="70" Margin="68,62,0,0" FontSize="18"/>
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Регистрация профиля" Width="300" Height="70" Margin="68,176,0,0" FontSize="18"/>
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Контакты" Width="300" Height="70" Margin="68,294,0,0" FontSize="18"/>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Контакты" Width="300" Height="70" Margin="68,294,0,0" FontSize="18" Click="Contacts_Click"/>
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Мои результаты" Width="300" Height="70" Margin="456,62,0,0" FontSize="18"/>
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Мой спонсор" Width="300" Height="70" Margin="456,176,0,0" FontSize="18"/>
         </Grid>

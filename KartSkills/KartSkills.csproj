@@ -22,8 +22,4 @@
     <Resource Include="Resources\logo.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="View\Dialogs\" />
-  </ItemGroup>
-
 </Project>

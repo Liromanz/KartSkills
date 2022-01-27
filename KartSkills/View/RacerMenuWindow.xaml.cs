@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Threading;
 using KartSkills.Global;
+using KartSkills.View.Dialogs;
 
 namespace KartSkills.View
 {
@@ -35,6 +36,12 @@ namespace KartSkills.View
         {
             WindowHelper.OpenNewWindow(new MainWindow());
             Close();
+        }
+
+        private void Contacts_Click(object sender, RoutedEventArgs e)
+        {
+            var contact = new ContactsWindow();
+            contact.ShowDialog();
         }
     }
 }
