@@ -14,7 +14,5 @@
 
         <TextBlock x:Name="TextEmail" TextWrapping="Wrap" FontSize="18"  Text="dkfjksdj@sdfksd.sd" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="153,104,0,0"/>
         <TextBlock TextWrapping="Wrap" FontSize="18"  Text="1234567890" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="180,0,0,0"/>
-
-
     </Grid>
 </Window>

@@ -23,7 +23,7 @@
         </Grid>
         <Grid Grid.Row="1">
             <Border BorderBrush="#FF505050" BorderThickness="3" Margin="92,135,581,163">
-                <Image Source="/Resources/Shlem.png"/>
+                <Image Source="/Resources/Shlem.png" MouseDown="Register_Click"/>
             </Border>
             <TextBlock Text="Регистрация гонщика" FontSize="15" Margin="78,276,0,0" FontFamily="Arial"/>
 

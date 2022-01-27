@@ -49,5 +49,11 @@ namespace KartSkills.View
             WindowHelper.OpenNewWindow(new LoginWindow());
             Close();
         }
+
+        private void Register_Click(object sender, MouseButtonEventArgs e)
+        {
+            WindowHelper.OpenNewWindow(new CheckRacerWindow());
+            Close();
+        }
     }
 }

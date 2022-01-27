@@ -67,7 +67,7 @@
             <TextBox x:Name="BoxAmount" ToolTip="Количество денег, которое вы готовы пожертвовать" BorderBrush="Black" Margin="0,0,119,76" Width="80" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="26"/>
             <Button Content="-" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="30" Margin="0,0,217,74"/>
 
-            <Button Content="Отмена" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,373,40,0"/>
+            <Button Content="Отмена" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,373,40,0"  Click="BackButton_Click"/>
             <Button Content="Заплатить" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,373,182,0" Click="PayButton_Click"/>
         </Grid>
         <Grid Grid.Row="2" Background="#FFB4B4B4">
