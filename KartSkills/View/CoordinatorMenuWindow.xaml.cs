@@ -1,30 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 using KartSkills.Global;
 
 namespace KartSkills.View
 {
     /// <summary>
-    /// Логика взаимодействия для LoginWindow.xaml
+    /// Логика взаимодействия для CoordinatorMenuWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class CoordinatorMenuWindow : Window
     {
-        public LoginWindow()
+        public CoordinatorMenuWindow()
         {
             InitializeComponent();
         }
+
         private DispatcherTimer timer;
         private DateTime startDate = new DateTime(2023, 6, 19, 23, 59, 59);
         private void StartWindow_Loaded(object sender, RoutedEventArgs e)
@@ -40,29 +30,11 @@ namespace KartSkills.View
             };
             timer.Start();
         }
-        private void Cancel_Click(object sender, RoutedEventArgs e)
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
         {
             WindowHelper.OpenNewWindow(new MainWindow());
             Close();
-        }
-
-        private void Login_Click(object sender, RoutedEventArgs e)
-        {
-            if (TextEmail.Text == "R")
-            {
-                WindowHelper.OpenNewWindow(new RacerMenuWindow());
-                Close();
-            }
-            if (TextEmail.Text == "C")
-            {
-                WindowHelper.OpenNewWindow(new CoordinatorMenuWindow());
-                Close();
-            }
-            if (TextEmail.Text == "A")
-            {
-                WindowHelper.OpenNewWindow(new AdminMenuWindow());
-                Close();
-            }
         }
     }
 }

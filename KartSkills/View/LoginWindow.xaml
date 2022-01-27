@@ -30,8 +30,8 @@
             <TextBox x:Name="TextPassword" Height="30" Width="250" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,173,0,0"/>
             <TextBox x:Name="TextEmail" Height="30" Width="250" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,98,0,0"/>
 
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Cancel" MinWidth="100" FontSize="18" Click="Login_Click" Margin="452,248,0,0"/>
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Login" MinWidth="100" FontSize="18" Click="Cancel_Click" Margin="320,248,0,0"/>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Cancel" MinWidth="100" FontSize="18" Click="Cancel_Click" Margin="452,248,0,0"/>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Login" MinWidth="100" FontSize="18" Click="Login_Click" Margin="320,248,0,0"/>
         </Grid>
         <Grid Grid.Row="2" Background="#FFB4B4B4">
             <TextBlock x:Name="TextTimer" Text="До начала события осталось:" HorizontalAlignment="Center" FontSize="18" FontFamily="Arial"/>
