@@ -16,6 +16,7 @@ namespace KartSkills.View
         }
         private DispatcherTimer timer;
         private DateTime startDate = new DateTime(2023, 6, 19, 23, 59, 59);
+        
         private void StartWindow_Loaded(object sender, RoutedEventArgs e)
         {
             timer = new DispatcherTimer();
@@ -37,6 +38,8 @@ namespace KartSkills.View
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
+
+
             if (TextEmail.Text == "R")
             {
                 WindowHelper.OpenNewWindow(new RacerMenuWindow());
