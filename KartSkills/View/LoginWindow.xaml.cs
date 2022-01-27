@@ -1,17 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 using System.Windows.Threading;
 using KartSkills.Global;
-using KartSkills.View.UserControll;
 
 namespace KartSkills.View
 {
     /// <summary>
-    /// Логика взаимодействия для CharityListWindow.xaml
+    /// Логика взаимодействия для LoginWindow.xaml
     /// </summary>
-    public partial class CharityListWindow : Window
+    public partial class LoginWindow : Window
     {
-        public CharityListWindow()
+        public LoginWindow()
         {
             InitializeComponent();
         }
@@ -29,19 +39,16 @@ namespace KartSkills.View
                     $"{Math.Abs(startDate.Second - DateTime.Now.Second)} секунд.";
             };
             timer.Start();
-
-            InsertDataInList();
         }
-        private void BackButton_Click(object sender, RoutedEventArgs e)
+        private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            WindowHelper.OpenNewWindow(new InfoWindow());
+            WindowHelper.OpenNewWindow(new MainWindow());
             Close();
         }
 
-        private void InsertDataInList()
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < 3; i++)
-                ListCharity.Items.Add(new CharityCard());
+            throw new NotImplementedException();
         }
     }
 }
