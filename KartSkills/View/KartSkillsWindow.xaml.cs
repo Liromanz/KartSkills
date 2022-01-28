@@ -6,14 +6,15 @@ using KartSkills.Global;
 namespace KartSkills.View
 {
     /// <summary>
-    /// Логика взаимодействия для InfoWindow.xaml
+    /// Логика взаимодействия для KartSkillsWindow.xaml
     /// </summary>
-    public partial class InfoWindow : Window
+    public partial class KartSkillsWindow : Window
     {
-        public InfoWindow()
+        public KartSkillsWindow()
         {
             InitializeComponent();
         }
+
         private DispatcherTimer timer;
         private DateTime startDate = new DateTime(2023, 6, 19, 23, 59, 59);
         private void StartWindow_Loaded(object sender, RoutedEventArgs e)
@@ -31,20 +32,9 @@ namespace KartSkills.View
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            WindowHelper.OpenNewWindow(new MainWindow());
+            WindowHelper.OpenNewWindow(new InfoWindow());
             Close();
         }
 
-        private void CharityButton_Click(object sender, RoutedEventArgs e)
-        {
-            WindowHelper.OpenNewWindow(new CharityListWindow());
-            Close();
-        }
-
-        private void KartSkills_Click(object sender, RoutedEventArgs e)
-        {
-            WindowHelper.OpenNewWindow(new KartSkillsWindow());
-            Close();
-        }
     }
 }
