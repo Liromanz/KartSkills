@@ -58,8 +58,8 @@
                 <ComboBox Grid.Row="0" x:Name="ComboBoxCharity" Grid.Column="1" ToolTip="Фонд Собак" BorderBrush="Black" Margin="7" Background="White" FontSize="18"/>
                 <TextBox Grid.Row="1" x:Name="BoxMoney" Grid.Column="1" ToolTip="$500" BorderBrush="Black" Margin="7"/>
             </Grid>
-            <Button Content="Отмена" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,380,516,0"/>
-            <Button Content="Регистрация" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,380,649,0" />
+            <Button Content="Отмена" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,380,516,0" Click="Back_Click"/>
+            <Button Content="Регистрация" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,380,649,0"  Click="Register_Click"/>
 
             <TextBlock Text="Детали спонсорства" HorizontalAlignment="Left" FontSize="18" Margin="564,277,0,129"/>
             <TextBlock x:Name="TextAmount" Text="$120" HorizontalAlignment="Left"  FontSize="50" Margin="547,310,0,0" Width="200" TextAlignment="Center"/>

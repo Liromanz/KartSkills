@@ -6,15 +6,14 @@ using KartSkills.Global;
 namespace KartSkills.View
 {
     /// <summary>
-    /// Логика взаимодействия для RaceRegisterWindow.xaml
+    /// Логика взаимодействия для RegisterConfirmedWindow.xaml
     /// </summary>
-    public partial class RaceRegisterWindow : Window
+    public partial class RegisterConfirmedWindow : Window
     {
-        public RaceRegisterWindow()
+        public RegisterConfirmedWindow()
         {
             InitializeComponent();
         }
-
 
         private DispatcherTimer timer;
         private DateTime startDate = new DateTime(2023, 6, 19, 23, 59, 59);
@@ -31,22 +30,15 @@ namespace KartSkills.View
             };
             timer.Start();
         }
-
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             WindowHelper.OpenNewWindow(new MainWindow());
             Close();
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
+        private void OK_Click(object sender, RoutedEventArgs e)
         {
             WindowHelper.OpenNewWindow(new RacerMenuWindow());
-            Close();
-        }
-
-        private void Register_Click(object sender, RoutedEventArgs e)
-        {
-            WindowHelper.OpenNewWindow(new RegisterConfirmedWindow());
             Close();
         }
     }

@@ -14,8 +14,6 @@ namespace KartSkills.View
         {
             InitializeComponent();
         }
-
-
         private DispatcherTimer timer;
         private DateTime startDate = new DateTime(2023, 6, 19, 23, 59, 59);
         private void StartWindow_Loaded(object sender, RoutedEventArgs e)
