@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KartSkills.View"
         mc:Ignorable="d"
+        FontSize="18"
         FontFamily="Arial"
         Title="Kart Skills 2017" Height="560" Width="800"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="StartWindow_Loaded">

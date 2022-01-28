@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Data;
 using System.Windows;
 using System.Windows.Threading;
 using KartSkills.Global;
+using Microsoft.Data.SqlClient;
 
 namespace KartSkills.View
 {
@@ -16,7 +18,7 @@ namespace KartSkills.View
         }
         private DispatcherTimer timer;
         private DateTime startDate = new DateTime(2023, 6, 19, 23, 59, 59);
-        
+
         private void StartWindow_Loaded(object sender, RoutedEventArgs e)
         {
             timer = new DispatcherTimer();
@@ -38,22 +40,29 @@ namespace KartSkills.View
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
+            DataTable table = SqlHelper.GetTableFromSql($"select * from [User] where [Email] = '{TextEmail.Text}' and [Password] = '{TextPassword.Text}'");
 
-
-            if (TextEmail.Text == "R")
+            if (table.Rows.Count != 0)
             {
-                WindowHelper.OpenNewWindow(new RacerMenuWindow());
-                Close();
+                if (table.Rows[0][4].ToString() == "R")
+                {
+                    WindowHelper.OpenNewWindow(new RacerMenuWindow());
+                    Close();
+                }
+                if (table.Rows[0][4].ToString() == "C")
+                {
+                    WindowHelper.OpenNewWindow(new CoordinatorMenuWindow());
+                    Close();
+                }
+                if (table.Rows[0][4].ToString() == "A")
+                {
+                    WindowHelper.OpenNewWindow(new AdminMenuWindow());
+                    Close();
+                }
             }
-            if (TextEmail.Text == "C")
+            else
             {
-                WindowHelper.OpenNewWindow(new CoordinatorMenuWindow());
-                Close();
-            }
-            if (TextEmail.Text == "A")
-            {
-                WindowHelper.OpenNewWindow(new AdminMenuWindow());
-                Close();
+                MessageBox.Show("Неверный логин или пароль");
             }
         }
     }
