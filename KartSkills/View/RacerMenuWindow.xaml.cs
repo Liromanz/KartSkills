@@ -43,5 +43,17 @@ namespace KartSkills.View
             var contact = new ContactsWindow();
             contact.ShowDialog();
         }
+
+        private void RaceRegiseter_Click(object sender, RoutedEventArgs e)
+        {
+            WindowHelper.OpenNewWindow(new RaceRegisterWindow());
+            Close();
+        }
+
+        private void ProfileEdit_Click(object sender, RoutedEventArgs e)
+        {
+            WindowHelper.OpenNewWindow(new ProfileEditWindow());
+            Close();
+        }
     }
 }
