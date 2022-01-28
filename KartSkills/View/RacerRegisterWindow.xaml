@@ -81,7 +81,7 @@
             <Button Content="Просмотр" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,222,44,0"  Click="BackButton_Click"/>
 
             <Button Content="Отмена" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,376,256,0"  Click="BackButton_Click"/>
-            <Button Content="Регистрация" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,376,433,0" />
+            <Button Content="Регистрация" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100" Margin="0,376,433,0" Click="RRegister_Click"/>
         </Grid>
         <Grid Grid.Row="2" Background="#FFB4B4B4">
             <TextBlock x:Name="TextTimer" Text="До начала события осталось:" HorizontalAlignment="Center" FontSize="18"/>

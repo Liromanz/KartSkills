@@ -6,11 +6,11 @@ using KartSkills.Global;
 namespace KartSkills.View
 {
     /// <summary>
-    /// Логика взаимодействия для RacerRegisterWindow.xaml
+    /// Логика взаимодействия для RaceRegisterWindow.xaml
     /// </summary>
-    public partial class RacerRegisterWindow : Window
+    public partial class RaceRegisterWindow : Window
     {
-        public RacerRegisterWindow()
+        public RaceRegisterWindow()
         {
             InitializeComponent();
         }
@@ -31,15 +31,16 @@ namespace KartSkills.View
             };
             timer.Start();
         }
-        private void BackButton_Click(object sender, RoutedEventArgs e)
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
         {
             WindowHelper.OpenNewWindow(new MainWindow());
             Close();
         }
 
-        private void RRegister_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            WindowHelper.OpenNewWindow(new RaceRegisterWindow());
+            WindowHelper.OpenNewWindow(new RacerMenuWindow());
             Close();
         }
     }
